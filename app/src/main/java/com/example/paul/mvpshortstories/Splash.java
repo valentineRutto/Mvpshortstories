@@ -16,16 +16,17 @@ public class Splash extends ActionBarActivity {
 Thread splashscreen=new Thread(){
     public void run(){
         try {
-            sleep(300);
+            sleep(3000);
         }catch (Exception e){
            e.printStackTrace();
         }finally {
             startActivity(new Intent(getApplicationContext(),MainActivity.class));
+        finish();
         }
     }
 };
 
-
+splashscreen.start();
     }
 
     @Override
