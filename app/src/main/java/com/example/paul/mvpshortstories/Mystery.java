@@ -1,38 +1,23 @@
 package com.example.paul.mvpshortstories;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class Splash extends ActionBarActivity {
+public class Mystery extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-Thread splashscreen=new Thread(){
-    public void run(){
-        try {
-            sleep(2000);
-        }catch (Exception e){
-           e.printStackTrace();
-        }finally {
-            startActivity(new Intent(getApplicationContext(),MainActivity.class));
-        finish();
-        }
-    }
-};
-
-splashscreen.start();
+        setContentView(R.layout.activity_mystery);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_splash, menu);
+        getMenuInflater().inflate(R.menu.menu_mystery, menu);
         return true;
     }
 

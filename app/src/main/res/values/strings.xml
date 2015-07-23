@@ -4,4 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_mystery">Mystery</string>
+    <string name="title_activity_horror">Horror</string>
+    <string name="title_activity_fiction">Fiction</string>
 </resources>
