@@ -12,7 +12,7 @@ public class Splash extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(android.R.layout.activity_splash);
 Thread splashscreen=new Thread(){
     public void run(){
         try {
