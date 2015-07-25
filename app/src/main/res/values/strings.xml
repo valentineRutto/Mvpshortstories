@@ -1,13 +1,12 @@
 <resources>
     <string name="app_name">Mvp short stories</string>
-
     <string name="action_settings">Settings</string>
     <string name="title_activity_splash">Splash</string>
     <string name="title_activity_mystery">Mystery</string>
     <string name="title_activity_horror">Horror</string>
     <string name="title_activity_fiction">Fiction</string>
-    <string name="m_text">One day, I
-quietly opened the front door without
+    <string name='m_text'>
+        One day,quietly opened the front door without
 saying anything and stood beneath
 the shadow of the banyan tree as I
 was waiting for the mysterious "Kabuliwala".
@@ -134,5 +133,6 @@ dry fruits. Whoever he might be, my
 imagination, or any paranormal character
 or any real person, I never forgot the
 taste of the dry fruits brought by
-him!</string>
+him!\"
+    </string>
 </resources>
