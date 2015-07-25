@@ -12,7 +12,9 @@ public class Mystery extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mystery);
+        String mystery = getResources().getString(R.string.m_text);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

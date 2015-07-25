@@ -1,5 +1,6 @@
 package com.example.paul.mvpshortstories;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String [] Stories ={"Mystery","Romantic","Fiction","Horror"};
+        String [] Stories ={"Mystery","Fiction","Horror"};
         ListAdapter theAdapter =new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Stories);
         ListView theListView=(ListView) findViewById(R.id.list);
         theListView.setAdapter(theAdapter);
@@ -29,6 +30,24 @@ public class MainActivity extends ActionBarActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
                 String story="you have selected "+String.valueOf(parent.getItemAtPosition(i));
                 Toast.makeText(MainActivity.this,story,Toast.LENGTH_SHORT).show();
+                if (i == 0) {
+                                      Intent appInfo = new Intent(getBaseContext(), Mystery.class);
+                    startActivity(appInfo);
+                                  }
+                if (i == 1) {
+                    Intent appInfo = new Intent(getBaseContext(), Fiction.class);
+                    startActivity(appInfo);
+                }
+                if (i == 0) {
+                    Intent appInfo = new Intent(getBaseContext(), Horror.class);
+                    startActivity(appInfo);
+                }
+
+
+
+
+
+
             }
         });
 
