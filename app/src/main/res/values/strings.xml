@@ -6,16 +6,16 @@
     <string name="title_activity_horror">Horror</string>
     <string name="title_activity_fiction">Fiction</string>
     <string name='m_text'>
-        One day,quietly opened the front door without
+        One day\,quietly opened the front door without
 saying anything and stood beneath
 the shadow of the banyan tree as I
-was waiting for the mysterious "Kabuliwala".
+was waiting for the mysterious \"Kabuliwala"\.
 suddenly, he appeared in front of me;
 that day, he was looking very much pale,
 he was crying! I came gently near him and
 tried to wipe off his tears from his eyes
-with my gentle hand and asked, "Are you
-crying?"
+with my gentle hand and asked, \"Are you
+crying?\"
 "Yes, my dear! I have to leave this city,
 somebody has cheated me! He has borrowed
 some money and dry fruits from me and
@@ -44,19 +44,19 @@ of the banyan tree as I thought, the
 man might be a magician and he could
 hide himself anywhere in the garden!
 But my efforts were fruitless, meanwhile,
-I heard our maid's voice calling me; I
+I heard our maid\'s voice calling me; I
 hoped, she did not notice anything
 which happened in the garden just
 now, but she had a little bit of doubt about
 my absent minded nature which led
 me to keep the front door open. Earlier,
-I told my parents about the "Kabuliwala"
+I told my parents about the \"Kabuliwala\"
 whom I used to meet in the garden
 very often and both my parents,
 specially my father, laughed it off
-by saying, "You think too much
+by saying, \"You think too much
 about the stories that your mother
-tells you every night!" But this time
+tells you every night!\" But this time
 they took the matter seriously when
 I showed them the metallic garland
 laid down under some fallen dry leaves
@@ -70,8 +70,8 @@ which I experienced about the mysterious
 man and I told him everything. My mother
 became very much afraid, by that time,
 a panic was very much common in the
-minds of many parents concerning "Chele-
-dhora" which meant a type of kidnapper
+minds of many parents concerning \"Chele-
+dhora\" which meant a type of kidnapper
 who used to steal or take away kids or
 little children in order to sell them else
 where or in return, they used to demand
@@ -84,10 +84,10 @@ neighbours suggested my parents
 to take me to a doctor in order to
 judge my psychological status!
 A good doctor checked me and
-suggested my parents, "Don't make
+suggested my parents, \"Don't make
 her too fond of story characters,
 it may effect upon her mind and
-soul." Whatever their comments might
+soul.\" Whatever their comments might
 be I had a strong belief that the
 person was real to me and it was
 not my assumption. After all, my parents
@@ -123,7 +123,7 @@ the present family had hardly any time to
 look after the garden! It was the solitary
 afternoon and I tried to recall all my early
 childhood memories, specially that strange
-man's look was still present in my mind.
+man\'s look was still present in my mind.
 It was the same time in the afternoon
 when he used to appear in front of the
 window of my bedroom, but after 15
@@ -135,4 +135,6 @@ or any real person, I never forgot the
 taste of the dry fruits brought by
 him!\"
     </string>
+    <string name="h_text"></string>
+
 </resources>

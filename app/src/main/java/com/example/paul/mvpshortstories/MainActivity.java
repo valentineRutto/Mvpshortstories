@@ -3,6 +3,7 @@ package com.example.paul.mvpshortstories;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,7 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.R;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -20,37 +20,42 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        String [] Stories ={"Mystery","Fiction","Horror"};
-        ListAdapter theAdapter =new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Stories);
-        ListView theListView=(ListView) findViewById(R.id.list);
-        theListView.setAdapter(theAdapter);
-        theListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public AdapterView adapterView;
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
-                String story="you have selected "+String.valueOf(parent.getItemAtPosition(i));
-                Toast.makeText(MainActivity.this,story,Toast.LENGTH_SHORT).show();
-                if (i == 0) {
-                                      Intent appInfo = new Intent(getBaseContext(), Mystery.class);
-                    startActivity(appInfo);
-                                  }
-                if (i == 1) {
-                    Intent appInfo = new Intent(getBaseContext(), Fiction.class);
-                    startActivity(appInfo);
-                }
-                if (i == 0) {
-                    Intent appInfo = new Intent(getBaseContext(), Horror.class);
-                    startActivity(appInfo);
-                }
 
 
 
+                String [] Stories ={"Mystery","Fiction","Horror"};
+                ListAdapter theAdapter =new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Stories);
+                ListView theListView=(ListView) findViewById(R.id.list);
+                theListView.setAdapter(theAdapter);
+                theListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    public AdapterView adapterView;
+
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+                        String story="you have selected "+String.valueOf(parent.getItemAtPosition(i));
+                        Toast.makeText(MainActivity.this,story,Toast.LENGTH_SHORT).show();
+                        if (i == 0) {
+                            Intent appInfo = new Intent(getBaseContext(), Mystery.class);
+                            startActivity(appInfo);
+                        }
+                        if (i == 1) {
+                            Intent appInfo = new Intent(getBaseContext(), Fiction.class);
+                            startActivity(appInfo);
+                        }
+                        if (i == 0) {
+                            Intent appInfo = new Intent(getBaseContext(), Horror.class);
+                            startActivity(appInfo);
+                        }
 
 
 
             }
         });
+
+
+
+
+
 
     }
 
