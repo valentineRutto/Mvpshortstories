@@ -11,9 +11,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
-import com.parse.Parse;
-import android.app.Application;
 
+import com.parse.Parse;
+import com.parse.ParseObject;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -25,6 +25,9 @@ public class MainActivity extends ActionBarActivity {
 // Enable Local Datastore.
         Parse.enableLocalDatastore(this);
         Parse.initialize(this, "s1Oo7JNGOjot12S4e1PskSDItLQsoVKRJwiZX4EY", "frDw7K0CKapb62v2fcp1yuFm2aqX786THwKR71Xt");
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("Work", "Muhfucker");
+        testObject.saveInBackground();
 
                 String [] Stories ={"Mystery","Fiction","Horror"};
                 ListAdapter theAdapter =new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Stories);
@@ -48,16 +51,8 @@ public class MainActivity extends ActionBarActivity {
                             Intent appInfo = new Intent(getBaseContext(), Horror.class);
                             startActivity(appInfo);
                         }
-
-
-
             }
         });
-
-
-
-
-
 
     }
 
