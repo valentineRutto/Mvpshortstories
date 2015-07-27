@@ -11,6 +11,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+import com.parse.Parse;
+import android.app.Application;
+
 
 
 public class MainActivity extends ActionBarActivity {
@@ -19,15 +22,15 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+// Enable Local Datastore.
+        Parse.enableLocalDatastore(this);
+        Parse.initialize(this, "s1Oo7JNGOjot12S4e1PskSDItLQsoVKRJwiZX4EY", "frDw7K0CKapb62v2fcp1yuFm2aqX786THwKR71Xt");
 
                 String [] Stories ={"Mystery","Fiction","Horror"};
                 ListAdapter theAdapter =new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,Stories);
                 ListView theListView=(ListView) findViewById(R.id.list);
                 theListView.setAdapter(theAdapter);
                 theListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    public AdapterView adapterView;
 
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
